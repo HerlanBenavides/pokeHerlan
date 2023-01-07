@@ -1,0 +1,391 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.home-container {
+    background: url(.\assets\pika-eve.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 800px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ash {
+    height: 500px;
+    position: relative;
+    right: 250px;
+}
+
+.vibrate-1 {
+    -webkit-animation: vibrate-1 0.3s linear infinite both;
+    animation: vibrate-1 0.3s linear infinite both;
+}
+
+@-webkit-keyframes vibrate-1 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+
+    20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
+
+@keyframes vibrate-1 {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+
+    20% {
+        -webkit-transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        -webkit-transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        -webkit-transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        -webkit-transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
+
+.nameTrainer,
+.continue {
+    font-size: 25px;
+}
+
+.continue {
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #91c9ff;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+}
+
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #91c9ff;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+
+.btn:hover {
+    transition: 1s ease-in-out;
+    background: #4f95da;
+}
+
+.btn:hover {
+    stroke-dashoffset: -480;
+}
+
+.btn {
+    color: rgb(54, 18, 212);
+    font-size: 18px;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 7px;
+}
+
+/*********************POKECARD*****************************************/
+
+.pokedex {
+    background-image: url(.\assets\fondoPoke2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.pokedex-header {
+    text-align: center;
+    padding: 30px;
+}
+
+.pokedex-header-message {
+    font-size: 50px;
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid;
+    border-radius: 13px;
+    transition: 1s ease;
+}
+
+.pokedex-header-message:hover {
+    transition: 1s ease;
+    background: linear-gradient(to right top, #DDCB1E, #AD212E);
+    color: #444444;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE;
+}
+
+.pokeDeck {
+    height: 400px;
+}
+
+.pokecard,
+.pokecard-pic {
+    height: 90px;
+    display: inline-block;
+    margin: 15px;
+}
+
+.poke-card-wrapper {
+    width: 460px;
+}
+
+.uno {
+    height: 100%;
+}
+
+.dos {
+    margin-top: 20px;
+    height: 300px;
+    overflow: auto;
+    position: absolute;
+    z-index: 0;
+}
+
+.uno,
+.dos {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.pokecard {
+    background: #f5e969;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    border: solid 1px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.pokecard:hover {
+    background: #f9803b;
+    box-shadow: 10px 10px 5px 0px rgba(23, 31, 222, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(23, 31, 222, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(23, 31, 222, 0.75);
+}
+
+.pokedex-header-input,
+.boton {
+    margin-top: 15px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.pokedex-header-select,
+.pokedex-header-input,
+.boton {
+    border-radius: 10px;
+}
+
+.pokedex-header-span-select {
+    margin-top: 15px;
+}
+
+.pagination-wrapper {
+    text-align: center;
+}
+
+.pagination-buttons {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pressed {
+    background: #f9803b;
+    width: 50px;
+    height: 50px;
+}
+
+.pressed:hover {
+    background: #f5e969;
+    box-shadow: 10px -30px 5px 0px rgba(23, 31, 222, 0.75);
+    -webkit-box-shadow: 10px -30px 5px 0px rgba(23, 31, 222, 0.75);
+    -moz-box-shadow: 10px -30px 5px 0px rgba(23, 31, 222, 0.75);
+}
+
+/****************************Informacion Pokemon*******************************************/
+
+.pokedex-id-wrapper {
+    text-align: center;
+    background-image: url(.\assets\bosq.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pokedex-id-wrapper-id-type-abilities-wrapper {
+    border: solid 2px;
+}
+
+.pokedex-id-wrapper-moves-wrapper {
+    background: rgba(201, 242, 155, .5);
+    /*    width: 200px;*/
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.pokedex-id-wrapper-id-type-abilities-wrapper {
+    background: rgba(46, 204, 113, .5);
+}
+
+.pokedex-id-wrapper-name {
+    background: rgba(3, 138, 255);
+}
+
+.pokedex-id-wrapper-button,
+.shake-horizontal {
+    height: 50px;
+    border-radius: 12px;
+    font-size: 20px;
+
+    -webkit-animation: shake-horizontal 4s cubic-bezier(.455, .03, .515, .955) infinite both;
+    animation: shake-horizontal 4s cubic-bezier(.455, .03, .515, .955) infinite both
+}
+
+@-webkit-keyframes shake-horizontal {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px)
+    }
+
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px)
+    }
+
+    80% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px)
+    }
+
+    90% {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px)
+    }
+}
+
+@keyframes shake-horizontal {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px)
+    }
+
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px)
+    }
+
+    80% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px)
+    }
+
+    90% {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px)
+    }
+}
+
+
+li {
+    list-style: none;
+}
